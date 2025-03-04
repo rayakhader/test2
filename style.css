@@ -79,14 +79,6 @@ h1,h2{
     background-color: #2314AE;
     color: white;
 }
-@media (max-width:600px) {
-    .nav-list{
-        display: none;
-    } 
-    .overlay h1{
-        text-align: center;
-    }   
-}
 #about{
     width: 70%;
     margin: auto;
@@ -159,47 +151,6 @@ h1,h2{
     grid-template-columns: auto auto;
     gap: 12px;
 }
-@media only screen and (max-width: 700px) {
-    .project{
-        flex-wrap: wrap;
-    }
-    .project > img{
-        width: 100%;
-    }
-    .skills-container{
-        width: 100%;
-        box-sizing: border-box;
-        grid-auto-rows: auto;
-    }
-    #lang,#data-base,#others{
-        grid-column: span 2;
-    }
-    .icons-group{
-        flex-wrap: wrap;
-    } 
-    #contact{
-        flex-direction: column;
-    }
-    #contact div, #contact form{
-        width: 100%;
-    }
-  }
-  
-  @media only screen and (min-width:700px) and (max-width: 900px) {
-    .project{
-       flex-wrap: wrap;
-    }
-    .project > img{
-        width: 100%;
-    }
-    .skills-container{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .icons-group{
-        flex-wrap: wrap;
-    } 
-  }
 .skills-group{
     padding: 12px;
     background-color: lightgray;
@@ -276,6 +227,10 @@ textarea{
 label{
     display: block;
 }
+form > button{
+    width: fit-content;
+    margin: auto;
+ }
 #footer{
     display: flex;
     flex-direction: column;
@@ -288,9 +243,54 @@ label{
     color: white;
     padding: 12px;
 }
-form > button{
-   width: fit-content;
-   margin: auto;
+@media only screen and (max-width: 700px) {
+    .project{
+        flex-wrap: wrap;
+    }
+    .project > img{
+        width: 100%;
+    }
+    .skills-container{
+        width: 100%;
+        box-sizing: border-box;
+        grid-auto-rows: auto;
+    }
+    #lang,#data-base,#others{
+        grid-column: span 2;
+    }
+    .icons-group{
+        flex-wrap: wrap;
+    } 
+    #contact{
+        flex-direction: column;
+    }
+    #contact div, #contact form{
+        width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width:700px) and (max-width: 900px) {
+    .project{
+       flex-wrap: wrap;
+    }
+    .project > img{
+        width: 100%;
+    }
+    .skills-container{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .icons-group{
+        flex-wrap: wrap;
+    } 
+  }
+  @media (max-width:600px) {
+    .nav-list{
+        display: none;
+    } 
+    .overlay h1, .overlay h2{
+        text-align: center;
+    }   
 }
 
 
